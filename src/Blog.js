@@ -22,7 +22,7 @@ class App extends Component{
         const { data } = this.state;
         const result = data.map((entry, index) => {
             return <li key="index"> 
-                        <ul> {entry.title.rendered} | {entry.date}</ul>
+                         {entry.title.rendered} | {entry.date}
              </li>
         })
 
