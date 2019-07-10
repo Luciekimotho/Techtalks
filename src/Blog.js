@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
 
-class App extends Component{
+class Blog extends Component{
     state = {
         data : [],
     }
@@ -27,12 +29,12 @@ class App extends Component{
         })
 
         return(
-            <ul> {result} </ul>
+            <ul> {result} </ul>    
         )
     }   
 }
 
-export default App
+export default Blog
 
 
 
