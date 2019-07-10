@@ -1,8 +1,11 @@
 import React from 'react'
+import { Navbar } from 'reactstrap';
 
 function Header(){
     return (
-        <h4>Welcome to my Tech Talks</h4>
+        <Navbar>
+            
+        </Navbar>
         
     )
 }

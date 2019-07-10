@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Blog from './Blog'
 import App from './App'
-import Footer from './Components/Footer'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
 
