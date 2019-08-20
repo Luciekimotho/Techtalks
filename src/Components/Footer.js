@@ -4,9 +4,14 @@ function Footer(){
     const date = new Date()
     let year = date.getFullYear()
 
+    const footer = {
+        textAlign : "center",
+        
+    }
+
     return (
         <footer>
-            <h4> Made with love by Lucie | { year }</h4>
+            <h6 style = {footer}> Made with love by Lucie | { year }</h6>
         </footer>
     )
 }

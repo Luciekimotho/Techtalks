@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
+import BlogPost from './BlogPost';
 
 class Blog extends Component{
+    
+
     state = {
         data : [],
     }
@@ -21,15 +24,23 @@ class Blog extends Component{
 
 
     render(){
+        const blogDiv = {
+            padding: 5,
+
+        }
+        const blogTitle = {
+            fontWeight : 700,
+        }
+
+        const blogContent = {
+
+        }
+
         const { data } = this.state;
-        const result = data.map((entry, index) => {
-            return <li key="index"> 
-                         {entry.title.rendered} | {entry.date}
-             </li>
-        })
+        const blogs = data.map(blog => <BlogPost key={blog.id} blog={blog}/>)
 
         return(
-            <ul> {result} </ul>    
+            <div> {blogs} </div>    
         )
     }   
 }
