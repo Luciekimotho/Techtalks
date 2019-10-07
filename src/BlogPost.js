@@ -9,9 +9,9 @@ class BlogPost extends Component{
         super(props);
           
         this.state = {
-            title: this.props.blog.title.rendered,
-            excerpt: this.props.blog.excerpt.rendered,
-            date: this.props.blog.date
+            title: this.props.blog.title,
+            excerpt: this.props.blog.content,
+            date: this.props.blog.created_at
         }
      }
     render(){

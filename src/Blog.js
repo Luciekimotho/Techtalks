@@ -15,9 +15,10 @@ class Blog extends Component{
     }
 
     componentDidMount(){
-        const url = 'http://luciekimotho.com/blog/wp-json/wp/v2/posts'
+        const url = 'https://blog-api-django.herokuapp.com/api/'
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
     
-        fetch(url)
+        fetch(proxyUrl + url)
         .then(result => result.json())
         .then(result => {
             this.setState({
