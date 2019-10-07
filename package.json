@@ -2,7 +2,6 @@
   "name": "prosper",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://luciekimotho.com/test/",
   "engines": {
     "node": "10.16.3"
   },
